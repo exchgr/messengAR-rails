@@ -1,0 +1,3 @@
+# messengAR server
+
+This is a Rails server that handles sending and receiving messages for messengAR for iOS.
