@@ -1,6 +1,7 @@
 MessengARRails::Application.routes.draw do
   devise_for :users
 
+  resources :token_authentications, :only => [:create, :destroy]
   resources :messages, only: [:index, :create, :show, :destroy]
 
   root to: 'home#index'
