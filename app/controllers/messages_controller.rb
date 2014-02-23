@@ -2,7 +2,15 @@ class MessagesController < ApplicationController
   respond_to :json
 
   def index
-    @messages = Message.all
+    @messages = []
+
+    Message.all.each do |msg|
+      @messages << {
+        hint: msg.hint,
+        url: "#{message_path(msg.id)}.json"
+      }
+    end
+
     respond_with @messages
   end
 
