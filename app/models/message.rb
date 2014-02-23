@@ -1,3 +1,3 @@
 class Message < ActiveRecord::Base
-  attr_accessible :content, :hint, :imageURL, :screenX, :screenY, :yaw, :pitch, :roll, :heading
+  attr_accessible :content, :hint, :imageURL, :screenX, :screenY, :yaw, :pitch, :roll, :heading, :latitude, :longitude
 end
