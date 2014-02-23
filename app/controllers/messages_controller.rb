@@ -3,15 +3,7 @@ class MessagesController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    @messages = []
-
-    current_user.messages.all.each do |msg|
-      @messages << {
-        hint: msg.hint,
-        url: "#{message_path(msg.id)}.json"
-      }
-    end
-
+    @messages = current_user.messages.all
     respond_with @messages
   end
 
