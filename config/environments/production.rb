@@ -66,5 +66,5 @@ MessengARRails::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   # Default mailer URL
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => '23.239.12.189' }
 end

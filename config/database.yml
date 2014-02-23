@@ -29,7 +29,12 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: messengAR
+  username: <%= ENV['POSTGRES_USERNAME_PROD'] %>
+  password: <%= ENV['POSTGRES_PASSWORD_PROD'] %>
+  host: localhost
+  port: 5432
   pool: 5
   timeout: 5000
