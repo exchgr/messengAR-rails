@@ -5,7 +5,7 @@ class MessagesController < ApplicationController
   def index
     @messages = []
 
-    Message.all.each do |msg|
+    current_user.messages.all.each do |msg|
       @messages << {
         hint: msg.hint,
         url: "#{message_path(msg.id)}.json"
@@ -17,6 +17,7 @@ class MessagesController < ApplicationController
 
   def create
     @message = Message.new(params[:message])
+    @message.user_id = User.find_by_email(params[:recipient]).id
     @message.save
     respond_with @message
   end
