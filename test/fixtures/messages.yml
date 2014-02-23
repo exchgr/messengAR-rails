@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  imageURL: MyString
+  content: MyString
+  screenX: 9.99
+  screenY: 9.99
+  hint: MyString
+
+two:
+  imageURL: MyString
+  content: MyString
+  screenX: 9.99
+  screenY: 9.99
+  hint: MyString
