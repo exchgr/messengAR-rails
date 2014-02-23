@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140223112703) do
+ActiveRecord::Schema.define(:version => 20140223144855) do
 
   create_table "messages", :force => true do |t|
     t.string   "content"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20140223112703) do
     t.decimal  "heading"
     t.decimal  "latitude"
     t.decimal  "longitude"
+    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|
