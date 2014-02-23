@@ -1,12 +1,17 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '~> 3.2.11'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg', '~> 0.17.1'
 
+# haml templating and generators
+gem 'haml', '~> 4.0.5'
+gem 'haml-rails', '~> 0.4.0'
+
+gem 'figaro', git: 'https://github.com/laserlemon/figaro.git', ref: 'afc6699422379c83b648a35b8846df2034000bb1'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -18,6 +23,10 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :development do
+  gem 'thin', '~> 1.6.1'
 end
 
 gem 'jquery-rails'
