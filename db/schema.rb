@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140223052443) do
+ActiveRecord::Schema.define(:version => 20140223054317) do
 
   create_table "messages", :force => true do |t|
     t.string   "imageURL"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(:version => 20140223052443) do
     t.decimal  "yaw"
     t.decimal  "pitch"
     t.decimal  "roll"
+    t.decimal  "heading"
   end
 
 end
