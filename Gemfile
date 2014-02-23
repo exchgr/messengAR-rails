@@ -12,6 +12,7 @@ gem 'haml', '~> 4.0.5'
 gem 'haml-rails', '~> 0.4.0'
 
 gem 'figaro', git: 'https://github.com/laserlemon/figaro.git', ref: 'afc6699422379c83b648a35b8846df2034000bb1'
+gem 'devise', '~> 3.1.2'
 
 # Gems used only for assets and not required
 # in production environments by default.
